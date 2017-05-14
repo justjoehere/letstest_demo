@@ -1,8 +1,3 @@
-# And(/^I have added it to my cart$/) do
-#   @browser.link(text: 'HTC One Mini Blue').click
-#   @browser.button(value: 'Add to cart').click
-# end
-
 And(/^I begin the checkout process as a guest$/) do
   @browser.link(text: 'shopping cart').click
   @browser.checkbox(id: 'termsofservice').set
