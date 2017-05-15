@@ -10,5 +10,5 @@ Feature: Shopping for electronics
     When I enter default billing information
     And I select same day shipping
     And I enter payment information
-    And I confirm order 110.00
+    And I confirm order 120.00
     Then I will receive a confirmation
