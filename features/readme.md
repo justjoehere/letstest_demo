@@ -2,6 +2,13 @@
 ##Install
 Ruby via the Rails Installer
 * http://railsinstaller.org - w/Ruby version 2.2
+* Ensure gems are in gemfile
+* <code>gem 'cucumber'
+* gem 'watir'
+* gem 'rspec'
+* gem 'rake'
+* gem 'page-object'</code>
+* run <code>bundle install</code> from command line
 
 RubyMine IDE
 * https://www.jetbrains.com/ruby/?fromMenu
