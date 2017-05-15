@@ -1,10 +1,19 @@
+# Launch Browser/Navigate to a page
+# Search for a product
+# Add it to the cart
+# Checkout as Guest
+# Enter Shipping Info
+# Enter Payment Info
+# Receive Confirmation
+
 require 'watir'
 require 'rspec/expectations'
 include RSpec::Matchers
 
 # launch and navigate
 @browser = Watir::Browser.new :chrome
-@browser.goto('http://centricconsulting.azurewebsites.net')
+# @browser.goto('http://centricconsulting.azurewebsites.net')
+@browser.goto('http://bit.ly/2rhVxM6')
 
 # Search for a product
 @browser.text_field(id: 'small-searchterms').set 'HTC'
@@ -48,7 +57,7 @@ include RSpec::Matchers
 @browser.text_field(id: 'CardCode').set "1234"
 @browser.div(id: 'payment-info-buttons-container').button(value: 'Continue').click
 
-#verify and confirm
+# verify and confirm
 expect(@browser.tr(class: 'order-total').text).to eq("Total: $110.00")
 @browser.button(value: 'Confirm').click
 expect(@browser.div(class: 'section order-completed').text.include? "Your order has been successfully processed!").to be_truthy

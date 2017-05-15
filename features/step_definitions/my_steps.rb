@@ -44,7 +44,7 @@ Then(/^I will receive a confirmation$/) do
 end
 
 Given(/^I have searched for (.*)$/) do |product|
-  @browser.goto('http://centricconsulting.azurewebsites.net')
+  @browser.goto('http://bit.ly/2rhVxM6')
   @browser.text_field(id: 'small-searchterms').set product
   @browser.button(value: 'Search').click
 end
