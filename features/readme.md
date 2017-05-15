@@ -28,3 +28,8 @@ Presenations
 
 Shortened URL
 *http://bit.ly/2rhVxM6
+
+##Mac Install
+See page 12 of the install doc.  Try Ruby 2.2.6
+Also see http://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/ 
+to install Chromiumdriver needed for testing

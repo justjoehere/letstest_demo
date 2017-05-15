@@ -42,6 +42,7 @@ include RSpec::Matchers
 @browser.button(value: 'Continue').click
 
 # Shipping Information - Only Continue
+# @browser.button(value: 'Continue').click
 @browser.div(id: 'shipping-buttons-container').button(value: 'Continue').click
 @browser.label(text: /Next Day Air/).click
 @browser.div(id: 'shipping-method-buttons-container').button(value: 'Continue').click
